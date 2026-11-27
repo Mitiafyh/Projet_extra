@@ -6,11 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Page de test</h1>
-    <form action="${pageContext.request.contextPath}/login" method="post">
-        
-        <button type="submit">Login</button>
-
-    </form>
+    <h1>Login form</h1>
 </body>
 </html>

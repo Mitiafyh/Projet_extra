@@ -9,9 +9,9 @@ import annotation.UrlMapping;
 
 @Controller
 public class AuthController {
-    @urlMapping(value = "/", method = "GET")
+    @UrlMapping(value = "/", method = "GET")
     public ModelAndView loginForm(){
-         ModelAndView mv = new ModelAndView("formLogin");
+         ModelAndView mv = new ModelAndView("loginForm");
             return mv;
     }
 
