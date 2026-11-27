@@ -1,0 +1,2 @@
+tail -f /home/fiorenantsoa/Documents/tomcat/tomcat/logs/catalina.out
+
