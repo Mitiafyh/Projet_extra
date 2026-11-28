@@ -27,14 +27,14 @@ public class Patient {
     @Column(name = "prenom")
     private String prenom;
 
-    @Column(name = "date_de_naissance")
+    @Column(name = "dateDeNaissance")
     private Date dateDeNaissance;
 
-    @Column(name = "lieu_de_naissance")
+    @Column(name = "lieuDeNaissance")
     private String lieuDeNaissance;
 
     @ManyToOne 
-    @JoinColumn(name = "id_sexe")
+    @JoinColumn(name = "idSexe")
     private Sexe sexe;
 
     @Column(name = "nationalite")
@@ -47,6 +47,19 @@ public class Patient {
     private String adresse;
 
     public Patient() {
+    }
+
+    public Patient(int id, String nom, String prenom, Date dateDeNaissance, String lieuDeNaissance, Sexe sexe,
+            String nationalite, String telephone, String adresse) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.dateDeNaissance = dateDeNaissance;
+        this.lieuDeNaissance = lieuDeNaissance;
+        this.sexe = sexe;
+        this.nationalite = nationalite;
+        this.telephone = telephone;
+        this.adresse = adresse;
     }
 
     public int getId() {
