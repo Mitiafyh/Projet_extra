@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,9 +22,10 @@
             <tr>
                 <td>${patient.nom}</td>
                 <td>${patient.prenom}</td>
-                <td>${patient.age}</td>
-                <td>${patient.sexe}</td>
+                <td>${patient.dateDeNaissance}</td>
+                <td>${patient.sexe.libelle}</td>
                 <td>${patient.adresse}</td>
+                <td>${patient.nationalite}</td>
                 <td>${patient.telephone}</td>
             </tr>
         </c:forEach>
